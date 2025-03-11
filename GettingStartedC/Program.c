@@ -1,10 +1,6 @@
 #include <stdio.h>
 
-// Vorwärtsdeklaration (Unterprogramm)
-extern void exercise_teuflische_folge();
-extern void printHello(int wieOft);
-extern int malZwei(int wert);
-extern void felder();
+#include "Globals.h"
 
 void introduction()
 {
@@ -77,6 +73,8 @@ void introduction()
 
 void main()
 {
+    g_zahlen[0] = 123;
+
     felder();
 
     printHello(5);

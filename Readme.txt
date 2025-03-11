@@ -17,6 +17,7 @@ a) Eingabe: Quelltext ( .c  )
        ==> Tool: Compiler // Übersetzer
 
 b) Ausgabe: Maschinencode
+       ==> Vorstufe: Erzeugung von .obj Dateien
        ==> Erstellen (das Programm 'Bauen')
        
 // ======================================
@@ -214,3 +215,56 @@ Warum ist das so einfach definiert ???
 
 Weil alle Elemente im SPEICHER DICHT
 hinter einander liegen.
+
+=======================================
+
+Felder und Unterprogramme
+
+Übung:
+======
+
+Zinzes-Zinsrechnung:
+====================
+
+Startkapital:  1.000€
+
+5% Zinsen: 
+
+1. Jahr: 50€      // 1.050€
+2. Jahr: 52,50€   // 1.102,50 €
+
+1.000€
+1.050€
+1.102,50€
+..
+..
+2.000€ oder mehr
+
+Ziel: Verdopplung
+
+int doubleInterestCapital (
+    float betrag,             // 1.000
+    float interest,           // 5.0
+    double interestRates[],   // Feld der Länge 10
+    10                        // Länge des Feld
+);
+
+Funktion ===> Ergebnis
+
+0:  Feld zu klein - keine Verdopplung
+Ein Wert groesser 0: Anzahl der Jahre, die für
+                     die Verdopplung des Einsatzes
+                     benötigt worden sind.
+
+Beispiel eines Aufrufs:
+
+float capital [10];
+
+int result = doubleInterestCapital (1000.0, 5.0, capital, 10);
+
+if (result == 0) {
+   // Feld zu klein
+}
+else {
+   // Alle Jahreswerte des eingesetzten Kapitals ausgeben.
+}
