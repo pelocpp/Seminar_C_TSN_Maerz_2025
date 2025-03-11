@@ -1,7 +1,14 @@
 #include <stdio.h>
 
-void main()
+// Vorwärtsdeklaration (Unterprogramm)
+extern void exercise_teuflische_folge();
+extern void printHello(int wieOft);
+extern int malZwei(int wert);
+extern void felder();
+
+void introduction()
 {
+
     int m = 0;
     float f = 3.5;
 
@@ -15,7 +22,7 @@ void main()
     int c = 5;
     int d = 6;
 
-    if ( (a < b)  ||  ! ( d < c ) )
+    if ((a < b) || !(d < c))
     {
         printf("%d ist kleiner als %d\n", a, b);
     }
@@ -38,7 +45,7 @@ void main()
 
     // for - Wiederholungsanweisung
     for (
-        int i = 0; i < 10 ; i = i + 3  ) 
+        int i = 0; i < 10; i = i + 3)
     {
         // die zu wiederholenden Anw.
         printf("bin hier: %d\n", i);
@@ -62,8 +69,20 @@ void main()
     printf("Start: %d\n", start);
 
     // from while to for
-    for (int n = 1; n < 6; n += 1 )
+    for (int n = 1; n < 6; n += 1)
     {
         printf("for: n = %d\n", n);
     }
+}
+
+void main()
+{
+    felder();
+
+    printHello(5);
+    printf("\n");
+    printHello(3);
+
+    int ergebnis;
+    ergebnis = malZwei(5);
 }

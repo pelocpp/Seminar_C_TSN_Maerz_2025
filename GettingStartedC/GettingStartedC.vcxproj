@@ -130,7 +130,10 @@
     <Text Include="..\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Felder.c" />
     <ClCompile Include="Program.c" />
+    <ClCompile Include="Teufel.c" />
+    <ClCompile Include="Unterprogramme.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

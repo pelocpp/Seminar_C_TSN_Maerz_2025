@@ -176,3 +176,41 @@ scanf ("%d", &start);
 
 Ausgabe der teufl. Folge in der Konsole.
 
+============================================
+
+Funktion
+Unterprogramm
+
+Was ist ein Unterprogramm / Funktion ???
+
+Zusammenfassung meherer Anweisungen
+zu einem Ganzen mit einem Namen.
+
+=========================================
+
+i = i + 1;
+
+in C very short:
+
+++i;
+--i;
+
+oder 
+
+i++;
+i--;
+
+==========================================================
+
+Was ist ein Feld / Array ???
+
+Wie eine Python-Liste, ABER:
+
+== Länge FEST
+== Elemente VOM SELBEN TYP
+== Zugriff mit INDEX
+
+Warum ist das so einfach definiert ???
+
+Weil alle Elemente im SPEICHER DICHT
+hinter einander liegen.

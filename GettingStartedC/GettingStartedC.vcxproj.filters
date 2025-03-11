@@ -21,5 +21,14 @@
     <ClCompile Include="Program.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Teufel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Unterprogramme.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Felder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
