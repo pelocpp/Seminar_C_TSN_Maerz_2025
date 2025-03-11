@@ -245,7 +245,7 @@ Ziel: Verdopplung
 int doubleInterestCapital (
     float betrag,             // 1.000
     float interest,           // 5.0
-    double interestRates[],   // Feld der Länge 10
+    float interestRates[],    // Feld der Länge 10
     10                        // Länge des Feld
 );
 
