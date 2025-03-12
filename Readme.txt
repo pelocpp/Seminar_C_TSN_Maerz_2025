@@ -452,3 +452,5 @@ void print       (Wallet* wallet); // "20 Euros, 10 cent"
 void compare     (Wallet* wallet, Wallet* other);
 void subEuros    (Wallet* wallet, int euros);
 void subCent     (Wallet* wallet, int cent);
+
+====================================================
