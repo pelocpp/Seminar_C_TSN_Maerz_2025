@@ -285,3 +285,69 @@ C
 C++
 
 C ist in C++ enthalten (zu 98% // minimale Unterschiede)
+
+============================================================
+============================================================
+
+Zeiger // Pointer
+-----------------
+
+Es gibt einen Datentyp 'Adresse' in C
+
+ABER:  Diesen betrachten wir IMMER mit einem Datentyp.
+
+Adresse eine int-Variablen
+
+Adresse einer double-Variablen
+
+1024h  // Hexadezimaler Wert
+
+1024h  ==> plus 8 Bytes:  
+
+=========================================================
+
+Zeiger in C:
+
+2 Operationen:
+
+i) Adresse einer Variablen: & - Operator.
+
+                Adress-Operator.
+
+ii) Indirekten Zugriffs-Operator:
+
+n = 123;  // direkte Zugriff auf n
+
+ip = &n;   // Anwendung des Adress-Operator.
+
+*ip = 123;  // indirekte (schreibende) Zugriff auf n
+            // mittels der Adresse von n
+
+int m = *ip;  // indirekte lesender Zugriff 
+
+// ================================================
+
+Wozu ???????????????????????????????????????????
+
+void malDrei(int n)
+{
+    n = 3 * n;
+}
+
+Wie wird ein Wert an malDrei übergeben ????
+
+zB
+
+int x = 5; 
+
+
+Wie wird x an malDrei übergeben:
+
+In Gestalt einer KOPIE.
+
+Kann man eine Funktion wie malDrei
+zum Laufen bringen ???
+
+===============================
+
+A) Bringe vertausche zum Laufen

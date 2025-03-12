@@ -4,7 +4,7 @@
 
 void main()
 {
-    zinsen();
+    zeiger();
 }
 
 void main_intro()

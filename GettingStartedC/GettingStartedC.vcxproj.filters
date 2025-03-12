@@ -16,6 +16,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\Readme.txt" />
+    <Text Include="Aufgabe.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -28,6 +29,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Felder.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Zeiger.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
