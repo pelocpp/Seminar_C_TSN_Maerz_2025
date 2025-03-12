@@ -1,8 +1,8 @@
+#include <stdio.h>
+
 #include "Globals.h"
 
 #define length 10
-
-#define length2  sdfsdfsdfsdf  
 
 // globale Variable
 int g_zahlen[5] = { 0 };
@@ -43,5 +43,75 @@ void felder_intro()
     // Vorbelegung eines Felds
     for (int i = 0; i < length; ++i) {
         zahlen[i] = 2 * i;
+    }
+}
+
+int zinsenRevised(
+    double interests[], 
+    int len, 
+    double startCapital, 
+    double interest) 
+{
+    double newCapital = startCapital;
+
+    interests[0] = startCapital;
+
+    int years = 0;
+
+    printf("Startkapital: %f\n", startCapital);
+
+    while (newCapital < 2 * startCapital)
+    {
+        double interestProYear = (newCapital / 100.0) * interest;
+
+        newCapital += interestProYear;
+
+        years++;
+
+        // passt years noch in Bezug auf len ?
+        if (years == len) {
+            // break;
+            return 0;
+        }
+
+        interests[years] = newCapital;
+
+        printf("Im %d. Jahr:  Aktuelles Kapital: %f\n", years, newCapital);
+    }
+
+    return years;
+}
+
+// double myInterests[3] = { 0.0 };
+
+void zinsen()
+{
+    double myInterests[20] = { 0.0 };
+
+    int years = zinsenRevised(myInterests, 20, 1000.0, 5.0);
+}
+
+
+void zinsen_erste_version() {
+
+    double startCapital = 1000.0;
+
+    double newCapital = startCapital;
+
+    double interest = 5.0;
+
+    int years = 0;  
+
+    printf("Startkapital: %f\n", startCapital);
+
+    while ( newCapital < 2 * startCapital )
+    {
+        double interestProYear = (newCapital / 100.0) * interest;
+
+        newCapital += interestProYear;
+
+        years++;
+
+        printf("Im %d. Jahr:  Aktuelles Kapital: %f\n", years, newCapital);
     }
 }

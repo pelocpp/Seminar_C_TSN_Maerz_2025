@@ -46,7 +46,9 @@ int: Ganze Zahlen (-5, 0, 5, ..)
 Datentypen wie int und float
 gibt es in mehreren Varianten:
 
-int, long, short, long long
+a) int, long, short, long long
+
+b) float (4 Bytes) , double (8 Bytes)
 
 Legt fest, wieviel Speicher intern bemötigt wird.
 
@@ -268,3 +270,18 @@ if (result == 0) {
 else {
    // Alle Jahreswerte des eingesetzten Kapitals ausgeben.
 }
+
+
+Bemerkung:
+
+== Ein Feld hat eine FESTE Länge
+
+== Dynamische Speicherverwaltung
+
+// Warum lernen wir nicht C++
+
+C
+
+C++
+
+C ist in C++ enthalten (zu 98% // minimale Unterschiede)

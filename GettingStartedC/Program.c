@@ -2,6 +2,31 @@
 
 #include "Globals.h"
 
+void main()
+{
+    zinsen();
+}
+
+void main_intro()
+{
+    zinsen();
+    return;
+
+
+    g_zahlen[0] = 123;
+
+    felder();
+
+    printHello(5);
+    printf("\n");
+    printHello(3);
+
+    int ergebnis;
+    ergebnis = malZwei(5);
+}
+
+
+
 void introduction()
 {
 
@@ -71,16 +96,3 @@ void introduction()
     }
 }
 
-void main()
-{
-    g_zahlen[0] = 123;
-
-    felder();
-
-    printHello(5);
-    printf("\n");
-    printHello(3);
-
-    int ergebnis;
-    ergebnis = malZwei(5);
-}
