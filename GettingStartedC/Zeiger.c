@@ -3,11 +3,13 @@
 
 // Unterprogramm
 
-void vertausche(int n, int m)
+void vertausche(int* n, int* m)
 {
-    int tmp = n;
-    n = m;
-    m = tmp;
+    int tmp1 = *n;  // indirektes Lesen
+    int tmp2 = *m;
+
+    *n = tmp2;      // indirektes Schreiben
+    *m = tmp1;
 }
 
 int malDreiClassic(int n)
@@ -37,7 +39,7 @@ void zeiger()
     int y = 6;
 
     printf("x=%d - y=%d \n", x, y);
-    vertausche(x, y);
+    vertausche(&x, &y);
     printf("x=%d - y=%d \n", x, y);
 }
 

@@ -351,3 +351,63 @@ zum Laufen bringen ???
 ===============================
 
 A) Bringe vertausche zum Laufen
+
+===============================
+
+int: Bitmuster             ==>  Zweierkomplement
+
+flaot / double: Bitmuster  ==>  IEEE Format.
+
+Vorkommaanteil, Nachkommaanteil, Exponent, Mantisse
+
+Tool:
+
+https://www.h-schmidt.net/FloatConverter/IEEE754de.html
+
+=============================================
+
+= Adressen
+
+= Indirektes Lesen
+
+= Indirektes Schreiben
+
+=============================================
+
+Strukturen 
+
+Was ist eine Struktur
+
+Uhrzeit:
+
+int hours1;
+int minutes1;
+int seconds1;
+
+int hours2;
+int minutes2;
+int seconds2;
+
+int hours3;
+int minutes3;
+int seconds3;
+
+Vorgehensweis: Brute-Force
+
+============================
+
+Nicht Brute-Force:  Struktur
+
+Zusammengesetzter Datentyp:
+
+struct Time
+{
+    int hours;
+    int minutes;
+    int seconds;
+};
+
+int n;
+
+struct Time now;
+struct Time pause;

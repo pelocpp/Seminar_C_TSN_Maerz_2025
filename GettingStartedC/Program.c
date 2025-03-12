@@ -4,7 +4,7 @@
 
 void main()
 {
-    zeiger();
+    strukturen();
 }
 
 void main_intro()

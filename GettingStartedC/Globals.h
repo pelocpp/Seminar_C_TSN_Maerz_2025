@@ -5,6 +5,7 @@ extern int malZwei(int wert);
 extern void felder();
 extern void zinsen();
 extern void zeiger();
+extern void strukturen();
 
 // Vorwärtsdeklaration (glob. Variablen)
 extern int g_zahlen[5];

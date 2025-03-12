@@ -133,6 +133,7 @@
     <ClCompile Include="Felder.c" />
     <ClCompile Include="Program.c" />
     <Text Include="Aufgabe.txt" />
+    <ClCompile Include="Strukturen.c" />
     <ClCompile Include="Teufel.c" />
     <ClCompile Include="Unterprogramme.c" />
     <ClCompile Include="Zeiger.c" />
