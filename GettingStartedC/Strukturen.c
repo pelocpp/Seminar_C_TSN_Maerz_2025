@@ -62,7 +62,7 @@ void setTime(Time* time, int hours, int minutes, int seconds)
 
 void strukturen()
 {
-    printf("Sizeof (Time): %d\n", sizeof (Time));
+    printf("Sizeof (Time): %d\n", (int) sizeof (Time));
 
     Time now = { 0 };
 
