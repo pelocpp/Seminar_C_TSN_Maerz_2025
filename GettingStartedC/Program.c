@@ -4,7 +4,7 @@
 
 void main()
 {
-    //wallet();
+    wallet();
 }
 
 void main_intro()
