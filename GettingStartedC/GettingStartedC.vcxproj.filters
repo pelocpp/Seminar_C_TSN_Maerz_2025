@@ -37,6 +37,9 @@
     <ClCompile Include="Strukturen.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Wallet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Globals.h">

@@ -4,7 +4,7 @@
 
 void main()
 {
-    strukturen();
+    wallet();
 }
 
 void main_intro()

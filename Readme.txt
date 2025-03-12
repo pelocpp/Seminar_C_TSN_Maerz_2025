@@ -411,3 +411,44 @@ int n;
 
 struct Time now;
 struct Time pause;
+
+============================
+
+Kombi:  Übung und Objektorientierung für Arme
+
+============================
+
+Was bedeutet Objektorientierung ???
+
+Ich habe Daten und Funktionen (Methoden) zusammen
+in einem sprachlichen Konstrukt.
+
+Konstrukt: Klasse
+
+Konstrukt der Klasse in C (für Arme): Struktur
+
+============================================================
+
+Geldbeutel
+
+// DATEN
+struct wallet
+{
+    int euros;
+    int cents;  // 0 .. 99
+};
+
+typedef struct wallet Wallet;
+
+// Funktionen, die auf den Daten 'struct wallet' arbeiten:
+// Methoden
+
+void reset       (Wallet* wallet);
+void addEuros    (Wallet* wallet, int euros);
+void addCent     (Wallet* wallet, int cent);
+
+void print       (Wallet* wallet); // "20 Euros, 10 cent"
+
+void compare     (Wallet* wallet, Wallet* other);
+void subEuros    (Wallet* wallet, int euros);
+void subCent     (Wallet* wallet, int cent);

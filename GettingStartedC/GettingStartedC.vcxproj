@@ -136,6 +136,7 @@
     <ClCompile Include="Strukturen.c" />
     <ClCompile Include="Teufel.c" />
     <ClCompile Include="Unterprogramme.c" />
+    <ClCompile Include="Wallet.c" />
     <ClCompile Include="Zeiger.c" />
   </ItemGroup>
   <ItemGroup>
