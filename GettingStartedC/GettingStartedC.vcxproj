@@ -130,7 +130,9 @@
     <Text Include="..\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Dynamisch.c" />
     <ClCompile Include="Felder.c" />
+    <ClCompile Include="Kontakteverwaltung.c" />
     <ClCompile Include="Program.c" />
     <ClCompile Include="Strukturen.c" />
     <ClCompile Include="Teufel.c" />

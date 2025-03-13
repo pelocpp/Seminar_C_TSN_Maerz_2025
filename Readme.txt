@@ -599,3 +599,39 @@ int string_to_lower (char kette[])    "abcABC!123"  ===> "abcabc!123"
 
 int string_reverse  (char kette[])    "123ABC" ==> "CBA321"
 
+============================================================
+
+Python:    List 
+
+list = [1, 5, 7, 9, 3]
+list.append (11)
+
+Das gibt es DIREKT in C so nicht
+
+ABER: Wir könnten eine Struktur List schreiben,
+die das auch kann.
+
+Was haben wir in C:
+
+a) Fixed-Sized Array // int zahlen[5] // Feld der Länge 5
+
+b) Variable-Sized Array // malloc // free
+
+Was geht DIREKT nicht:
+
+int n;
+
+// n berechnen oder von der Konsole einlesen ..
+
+int zahlen[n]   // Nope
+
+malloc // memory allocate
+
+// ==========================================================
+
+All-In:  Arrays und Strukturen
+
+Kontakteverwaltung:
+
+
+

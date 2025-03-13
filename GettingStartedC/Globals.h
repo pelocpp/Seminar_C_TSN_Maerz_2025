@@ -9,6 +9,8 @@ extern void strukturen();
 extern void wallet();
 extern void test_zeichen();
 extern void test_zeichenketten();
+extern void dynamisch();
+void kontakteverwaltung();
 
 // Vorwärtsdeklaration (glob. Variablen)
 extern int g_zahlen[5];

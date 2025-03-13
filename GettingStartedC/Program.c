@@ -2,6 +2,10 @@
 
 #include "Globals.h"
 
+void main()
+{
+    kontakteverwaltung();
+}
 
 void zwei_divisionen()
 {
@@ -40,11 +44,6 @@ void zwei_divisionen()
         result = (double) zaehler / nenner;
     }
 
-}
-
-void main()
-{
-    test_zeichenketten();
 }
 
 void main_intro()

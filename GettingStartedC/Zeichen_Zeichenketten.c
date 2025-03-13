@@ -57,6 +57,23 @@ int string_to_upper (char kette[])
     }
 }
 
+void string_reverse(char kette[])
+{
+    // compute length
+    int length = string_length(kette);
+
+    // swap chars  // vertauschen
+    // 8 / 2 = 4
+    // 9 / 2 = 4
+    for (int i = 0; i < length / 2; i++) {
+
+        char ch = kette[length - 1 - i];
+
+        kette[length - 1 - i] = kette[i];
+
+        kette[i] = ch;
+    }
+}
 
 void test_zeichenketten()
 {
