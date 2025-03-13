@@ -39,9 +39,15 @@
     <ClCompile Include="Wallet.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Zeichen_Zeichenketten.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wallet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

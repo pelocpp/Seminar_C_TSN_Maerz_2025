@@ -7,6 +7,8 @@ extern void zinsen();
 extern void zeiger();
 extern void strukturen();
 extern void wallet();
+extern void test_zeichen();
+extern void test_zeichenketten();
 
 // Vorwärtsdeklaration (glob. Variablen)
 extern int g_zahlen[5];

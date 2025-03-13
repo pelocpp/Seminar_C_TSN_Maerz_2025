@@ -2,9 +2,49 @@
 
 #include "Globals.h"
 
+
+void zwei_divisionen()
+{
+    {
+        // C: 2 Divisionen
+        double result = 0;
+
+        int nenner = 3;
+        int zaehler = 1;
+
+        // ganzzahlige Division
+        result = zaehler / nenner;
+    }
+
+    {
+        // C: 2 Divisionen
+        double result = 0;
+
+        double nenner = 3;
+        int zaehler = 1;
+
+        // Gleitkomma Division
+        result = zaehler / nenner;
+        result = result;
+    }
+
+    {
+        // C: 2 Divisionen
+        double result = 0;
+
+        int nenner = 3;
+        int zaehler = 1;
+
+        // Gleitkomma Division auf Grund von Typkonvertierung
+        // Type Cast
+        result = (double) zaehler / nenner;
+    }
+
+}
+
 void main()
 {
-    wallet();
+    test_zeichenketten();
 }
 
 void main_intro()

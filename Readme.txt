@@ -1,4 +1,24 @@
+// ============================================================
+
 Erste Schritte in C
+
+// ============================================================
+
+https://github.com/pelocpp
+
+https://github.com/pelocpp/c_introduction
+
+peter.loos@gmx.de
+
+// ============================================================
+
+Learning by Doing
+
+https://adventofcode.com/
+
+https://projecteuler.net/archives
+
+// ============================================================
 
 Dennis Ritchie
 
@@ -454,3 +474,128 @@ void subEuros    (Wallet* wallet, int euros);
 void subCent     (Wallet* wallet, int cent);
 
 ====================================================
+
+Wie würde das Beispiel in C++ aussehen:
+
+class wallet
+{
+    int euros;
+    int cents;  // 0 .. 99
+
+    void reset     ();
+    void addEuros  (int euros);
+    void addCent   (int cent);
+    void print     ();
+    int  compare   (const Wallet* other);
+    void subEuros  (int euros);
+    void subCent   (int cent);
+};
+
+// =====================================================
+
+Typkonvertierung
+
+// =====================================================
+
+Anmerkung:
+
+struct wallet
+{
+    int euros;
+    int cents;  // 0 .. 99
+};
+
+Bemerkung:
+
+struct wallet
+{
+    int cents;  // 3.50 => 350
+};
+
+//======================================= 
+
+Zeichen  // Zeichenketten
+
+Dynamische Daten
+
+//======================================= 
+Zeichen  // Zeichenketten
+
+Was ist ein Zeichen?
+
+A
+B
+!
+1
+"
+
+Datentyp:  char
+
+Dualität:  char und int
+
+Wie wird ein Zeichen im Speicher abgelegt ?
+
+ASCII-Tabelle
+
+=======================================
+
+Schreibmaschine
+
+Wagen  // Wagenrücklauf
+
+          Carriage Return
+
+Eine Drehung des Wagens nach unten:
+
+Line Feed
+
+=====================================
+
+
+Mehrere Zeichen:
+
+Zeichenkette // String
+
+Definition:
+
+Eine Zeichenkette ist eine Folge von Zeichen
+mit einer abschließenden Null.
+terminierende Null
+Oder auch als Backslash Null ('\0') bezeichnet
+
+
+i)  Zeichenketten Konstante
+
+Die Zeichen sind mit " einzuschließen!
+
+Datentyp: const char*  // Anfangsadresse
+
+ii) Zeichenketten Variable
+
+Array / Feld von char-Variablen.
+
+Zeichenkettenverarbeitung:
+
+Berechnung der Länge einer Zeichenkette
+durch ein Unterprogramm.
+
+=============================
+
+string_length:
+Liefert die Länge einer Zeichenkette zurück,
+ohne die terminierende Null.
+
+string_to_upper:
+
+"abcABC!123"  ===> "ABCABC!123"
+
+C-Programierung ohne Hilfsmittel:
+
+Bare-Metal Programming
+
+
+
+int string_to_lower (char kette[])    "abcABC!123"  ===> "abcabc!123"
+
+int string_reverse  (char kette[])    "123ABC" ==> "CBA321"
+

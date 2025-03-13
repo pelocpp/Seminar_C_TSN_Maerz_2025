@@ -136,10 +136,12 @@
     <ClCompile Include="Teufel.c" />
     <ClCompile Include="Unterprogramme.c" />
     <ClCompile Include="Wallet.c" />
+    <ClCompile Include="Zeichen_Zeichenketten.c" />
     <ClCompile Include="Zeiger.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Globals.h" />
+    <ClInclude Include="Wallet.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

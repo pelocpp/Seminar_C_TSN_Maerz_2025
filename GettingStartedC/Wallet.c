@@ -1,29 +1,11 @@
 // =======================================================================
+// Datei Wallet.c
 // Geldbeutel
 // =======================================================================
 
 #include <stdio.h>
 
-// =======================================================================
-// Data
-struct wallet
-{
-    int euros;
-    int cents;  // 0 .. 99
-};
-
-typedef struct wallet Wallet;
-
-// =======================================================================
-// Funktionen, die auf den Daten 'struct wallet' arbeiten (Methoden)
-// Schnittstelle
-void reset     (Wallet* wallet);
-void addEuros  (Wallet* wallet, int euros);
-void addCent   (Wallet* wallet, int cent);
-void print     (const Wallet* wallet);
-int  compare   (const Wallet* wallet, const Wallet* other);
-void subEuros  (Wallet* wallet, int euros);
-void subCent   (Wallet* wallet, int cent);
+#include "Wallet.h"
 
 // =======================================================================
 // Implementierung
@@ -42,6 +24,7 @@ void addEuros(Wallet* wallet, int euros)
 void addCent(Wallet* wallet, int cent) {
 
     wallet->cents += cent;
+
     if (wallet->cents >= 100) {
         wallet->euros += wallet->cents / 100;
         wallet->cents = wallet->cents % 100;
@@ -73,6 +56,7 @@ void subEuros(Wallet* wallet, int euros)
     }
 }
 
+// 13.80  ==> 170 cent
 void subCent(Wallet* wallet, int cent)
 {
     if (cent < wallet->cents) {
